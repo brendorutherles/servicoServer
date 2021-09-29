@@ -5,7 +5,7 @@
   "dockerfileLines": [
                         "FROM php:7.3",
                         "USER root",
-                        "RUN chmod -R 777 /bootstrap/cache"
+                        "RUN chmod -R 777 /var/www/html/bootstrap/cache"
                   
                     ]
  }
