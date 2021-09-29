@@ -4,9 +4,9 @@
   "schemaVersion": 2,
   "dockerfileLines": [
                         "FROM php:7.3",
-                        "RUN chmod 755 storage/framework",
-                        "RUN chmod 755 storage/logs",
-                        "RUN chmod 755 bootstrap/cache"
+                        "RUN chmod -R 777 storage/framework",
+                        "RUN chmod -R 777 storage/logs",
+                        "RUN chmod -R 777 bootstrap/cache"
                   
                     ]
  }
