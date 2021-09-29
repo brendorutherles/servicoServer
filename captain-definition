@@ -1,4 +1,9 @@
- {
+{
   "schemaVersion": 2,
-  "templateId": "php/7.3.0"
+  "dockerfileLines": [
+                        "FROM php:7.3",
+                         "storage/framework",
+                         "storage/logs",
+                         "bootstrap/cache",
+                    ]
  }
