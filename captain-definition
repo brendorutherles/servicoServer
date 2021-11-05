@@ -4,8 +4,13 @@
   "schemaVersion": 2,
   "dockerfileLines": [
                         "FROM php:7.3",
-                        "USER root",
-                        "RUN chmod -R 777 /www/html/bootstrap/cache"
-                  
+                        "RUN mkdir -p /usr/src/app",
+                        "WORKDIR /usr/src/app",
+                        "COPY ./ /usr/src/app",
+                        "ENV PORT 80",
+                        "EXPOSE 80"
+                       
                     ]
  }
+ 
+ 
